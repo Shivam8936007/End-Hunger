@@ -17,17 +17,286 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color:black;
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* App.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+}
+.navbar h1 {
+  max-height: 70px;
+  font-weight: bold;
+  font-size: large;
+}
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li a:hover {
+  color: #aaa;
+}
+.container{
+  display: flex;
+}
+.left{
+  background-color: gold;
+  margin:50px;
+  width: 500px; 
+  height: 340px;
+  padding:50px;
+}
+.left h1{
+  font-weight:400;
+  font-size:xx-large;
+}
+.left p{
+  font-size:60px;
+}
+.left h2{
+  font-size: x-large;
+}
+.left button{
+  margin-top:20px;
+  background-color: white;
+  width:180px;
+  height:40px;
+  color:black;
+}
+.left button:hover{
+background-color: black;
+color:white;
+}
+.right{
+  margin:30px;
+  width: 500px; 
+  padding:30px;
+}
+.right h1{
+  font-size:60px;
+}
+.right p{
+  font-size: 20px;
+}
+.right h4{
+  margin-top: 30px;
+}
+.right button{
+  margin-top:20px;
+  background-color: gold;
+  width:180px;
+  height:40px;
+  color:black;
+}
+.right button:hover{
+  background-color: black;
+  color:white;
+  }
+  .horizontal-line {
+    border-top: 1px solid #000; 
+    margin: 20px 0; 
+  }
+  .text{
+    display:flex;
+    width:auto;
+    height:200px;
+    margin-left: 15px;
+  }
+  .our-mission{
+    padding:30px;
+    width:400px;
+  }
+  .our-mission button{
+    margin-top: 5px;
+    color: gold;
+    border-bottom:1.5px solid gold;
+  }
+  .Fundraisers{
+    text-align: center;
+    justify-content: center;
+    width:auto;
+    height:700px;
+    background-color: #f4f1f1;
+    padding:50px;
+  }
+  .Fundraisers h1{
+    font-size:30px;
+  }
+  .Fundraisers p{
+    text-align: center;
+    justify-content: center;
+  }
+  .Fundraisers button{
+    margin-top: 5px;
+    color: gold;
+    border-bottom:1.5px solid gold;
+  }
+  .card{
+    background-color: rgb(255, 255, 255);
+    margin:20px;
+    width: 500px; 
+    height: 440px;
+    padding:20px;
+  }
+  .card h3{
+    font-size: 20px;
+  }
+  .arrow-buttons{
+    color: #000;
+  }
+  .Donation{
+    text-align: center;
+    justify-content: center;
+    width:auto;
+    margin-top: 20px;
+  }
+  .Donation h1{
+    font-size:30px;
+  }
+  .Donation p{
+    text-align: center;
+    justify-content: center;
+  }
+  .Donation button{
+    margin-top: 5px;
+    color: gold;
+    border-bottom:1.5px solid gold;
+  }
+  .person{
+    display:flex;
+    padding:30px;
+    width:400px;
+  }
+  span{
+    color:green;
+  }
+  .stories{
+    background-color: gold;
+    width:auto;
+    height:350px;
+    display: flex;
+  }
+  .stories-left{
+    margin:50px;
+    width: 500px; 
+    height: 340px;
+    padding:50px;
+  }
+.stories-right{
+  margin:25px;
+  width: 500px; 
+  padding:30px;
+  color:white;
+}
+.stories h1{
+  font-size: 17px;
+}
+.stories p{
+  font-size: 20px;
+}
+.stories h2{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.stories button{
+  margin-top:20px;
+  background-color: green;
+  width:240px;
+  height:50px;
+  color:white;
+}
+.stories button:hover{
+  background-color: black;
+  color:white;
+}
+.latest-news{
+  width:auto;
+  height:350px;
+}
+.latest-news h2{
+  margin-left:40px;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 40px;
+}
+.our{
+  padding:30px;
+    width:400px;
+}
+
+.our p{
+  color:gray;
+  margin-top: 10px;
+}
+.our button{
+  color:gold;
+  margin-top: 20px;
+}
+.our button:hover{
+  color:black;
+}
+.form{
+  background-color: gold;
+    width:auto;
+    height:350px;
+    display: flex;
+}
+.form-left{
+  margin:50px;
+  width: 500px; 
+  height: 340px;
+  padding:50px;
+}
+.form-right{
+  margin:25px;
+  width: 500px; 
+  padding:30px;
+  color:white;
+}
+.form-right h1{
+  font-size: 25px;
+}
+.footer{
+  width:auto;
+  height:800px;
+  background-color: #535151;
+  color:white;
+}
+.footer h1{
+  padding:50px;
+  font-size: 30px;
+}
+.footer h3{
+  width:300px;
+ margin-left: 50px;
+ font-size: 20px;
+}
+.footer p{
+  width:300px;
+  margin-left: 50px;
+  font-size: 15px;
 }
